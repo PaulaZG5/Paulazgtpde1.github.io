@@ -1,0 +1,44 @@
+ .container{
+    display:flex;
+    
+   
+   
+} 
+
+.bloque{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-size: 350px;
+    margin: 0%;
+    text-align: center;
+    color: gray;
+
+   
+}
+
+h2{
+    font-family: serif;
+    
+}
+
+
+
+.blur{
+    filter: blur(3px);
+}
+
+
+
+.img {
+    height: 400px;
+  }
+
+img:hover{
+    filter: none;
+}

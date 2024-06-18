@@ -1,0 +1,87 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.gallery-header {
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(135deg, rgb(65, 66, 67), rgb(174, 177, 179));
+    color: #fff;
+}
+
+.gallery-header h1 {
+    font-size: 3em;
+    margin: 0;
+    font-family:sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.gallery-item {
+    position: relative;
+    width: calc(33.333% - 20px); 
+    overflow: hidden;
+    border: 1px solid #b1afaf;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.gallery-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.gallery-item img {
+    height: 200px; 
+    object-fit: cover; 
+    filter: opacity(40%);;
+    transition: filter 0.3s ease;
+}
+
+.gallery-item:hover img {
+    filter: none;
+}
+
+.caption {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    width: 50%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: right 0.3s ease;
+   
+}
+
+.gallery-item:hover .caption {
+    right: 0; 
+}
+
+.caption h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.caption p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+}
